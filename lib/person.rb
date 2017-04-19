@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-#
 require 'date'
-#
+
 class Person
   def initialize(h)
     h.keys.each do |key|
