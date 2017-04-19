@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'pry'
+
 module ArrayMethods
   module Labs
     require 'csv'
@@ -15,22 +15,14 @@ module ArrayMethods
                     end
       end
 
-      def people_older_than(age)
-        people.select { |person| person.age > age }.count
-      end
+      def people_older_than(age); end
 
-      def people_younger_than(age)
-        people.select { |person| person.age < age }.count
-      end
+      def people_younger_than(age); end
 
-      def people_with_same_first_last_start_letter
-        people.select { |person| person.given_name[0] == person.surname[0] }.count
-      end
+      def people_with_same_first_last_start_letter; end
 
-      def average_age
-        people.map { |person| person.age }.reduce(0) { |memo, el| memo + el} / people.count
-      end
+      def average_age; end
 
-   end
+    end
   end
 end
